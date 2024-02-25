@@ -48,8 +48,8 @@
             }
 
             function loadQuestion() {
-                if (currentQuestion >= 60) {
-                    resultElement.textContent = `You scored ${score} out of ${60}`;
+                if (currentQuestion >= shuffledQuestions.length) {
+                    resultElement.textContent = `You scored ${score} out of ${shuffledQuestions.length}`;
                     questionElement.style.display = "none"; // Hide question
                     imgquestionElement.style.display = "none"; // Hide question
                     optionsElement.style.display = "none"; // Hide options
